@@ -45,16 +45,22 @@ console.log(average(9, 3, 4, 9));
 
 console.log('ZAD3 - using reduce');
 
-var digitals = [1, 5, 8, 9];
+var digitals = new Array();
+
+digitals.push(parseFloat(prompt('Podaj pierwsza liczbe: ')));
+digitals.push(parseFloat(prompt('Podaj druga liczbe: ')));
+digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
+digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
+
 var result = digitals.reduce(function (accumulator, currenValue) {
 	return accumulator + currenValue;
 }) / digitals.length;
+
 console.log(result);
 
 //ZAD4 
 console.log('ZAD4');
 
-sum = 0;
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 var a = grades[0],
     b = grades[1],
