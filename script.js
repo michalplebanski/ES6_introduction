@@ -13,10 +13,10 @@ console.log('ZAD2');
 
 const multiply = (a = 1, b = 1) => a * b;
 
-console.log(`${multiply(4, 8)}`);
-console.log(`${multiply(3, 2)}`);
-console.log(`${multiply(9, 6)}`);
-console.log(`${multiply(6)}`);
+console.log(multiply(4, 8));
+console.log(multiply(3, 2));
+console.log(multiply(9, 6));
+console.log(multiply(6));
 
 
 // ZAD3
@@ -33,22 +33,25 @@ console.log(average(9, 3, 4, 9));
 
 		//OR
 
-console.log('ZAD3 - using reduce')
+console.log('ZAD3 - using reduce');
 
-let digitals = new Array();
+const digitals = [];
 
 digitals.push(parseFloat(prompt('Podaj pierwsza liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj druga liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
 
-const result = digitals.reduce((accumulator, currenValue) => accumulator + currenValue) / digitals.length;
+
+const avg = (...args) => digitals.reduce((accumulator, currenValue) => accumulator + currenValue) / digitals.length;
+const result = avg(digitals)
+
 
 console.log(result);
 
 
 
-//ZAD4 
+//ZAD4
 console.log('ZAD4');
 
 const grades = [1,5,5,5,4,3,3,2,1]

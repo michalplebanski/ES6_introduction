@@ -18,10 +18,10 @@ var multiply = function multiply() {
 	return a * b;
 };
 
-console.log('' + multiply(4, 8));
-console.log('' + multiply(3, 2));
-console.log('' + multiply(9, 6));
-console.log('' + multiply(6));
+console.log(multiply(4, 8));
+console.log(multiply(3, 2));
+console.log(multiply(9, 6));
+console.log(multiply(6));
 
 // ZAD3
 console.log('ZAD3 - using forEach');
@@ -45,20 +45,23 @@ console.log(average(9, 3, 4, 9));
 
 console.log('ZAD3 - using reduce');
 
-var digitals = new Array();
+var digitals = [];
 
 digitals.push(parseFloat(prompt('Podaj pierwsza liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj druga liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
 
-var result = digitals.reduce(function (accumulator, currenValue) {
-	return accumulator + currenValue;
-}) / digitals.length;
+var avg = function avg() {
+	return digitals.reduce(function (accumulator, currenValue) {
+		return accumulator + currenValue;
+	}) / digitals.length;
+};
+var result = avg(digitals);
 
 console.log(result);
 
-//ZAD4 
+//ZAD4
 console.log('ZAD4');
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
