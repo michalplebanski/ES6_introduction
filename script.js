@@ -17,7 +17,6 @@ console.log(multiply(3, 2));
 console.log(multiply(9, 6));
 console.log(multiply(6));
 
-
 // ZAD3
 console.log('ZAD3 - using forEach');
 
@@ -40,7 +39,6 @@ digitals.push(parseFloat(prompt('Podaj pierwsza liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj druga liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
-
 
 const avg = (...args) => args.reduce((accumulator, currenValue) => accumulator + currenValue) / args.length;
 const result = avg(...digitals);
