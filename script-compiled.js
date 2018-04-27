@@ -53,11 +53,15 @@ digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
 
 var avg = function avg() {
-	return digitals.reduce(function (accumulator, currenValue) {
+	for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+		args[_key2] = arguments[_key2];
+	}
+
+	return args.reduce(function (accumulator, currenValue) {
 		return accumulator + currenValue;
-	}) / digitals.length;
+	}) / args.length;
 };
-var result = avg(digitals);
+var result = avg.apply(undefined, digitals);
 
 console.log(result);
 

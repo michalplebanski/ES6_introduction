@@ -7,7 +7,6 @@ const text = `${first} ${second}`;
 
 console.log(text);
 
-
 //ZAD2
 console.log('ZAD2');
 
@@ -31,7 +30,7 @@ const average = (...args) => {
 console.log(average(3, 5, 43, 7));
 console.log(average(9, 3, 4, 9));
 
-		//OR
+//OR
 
 console.log('ZAD3 - using reduce');
 
@@ -43,19 +42,16 @@ digitals.push(parseFloat(prompt('Podaj trzecia liczbe: ')));
 digitals.push(parseFloat(prompt('Podaj czwarta liczbe: ')));
 
 
-const avg = (...args) => digitals.reduce((accumulator, currenValue) => accumulator + currenValue) / digitals.length;
-const result = avg(digitals)
-
+const avg = (...args) => args.reduce((accumulator, currenValue) => accumulator + currenValue) / args.length;
+const result = avg(...digitals);
 
 console.log(result);
-
-
 
 //ZAD4
 console.log('ZAD4');
 
-const grades = [1,5,5,5,4,3,3,2,1]
-const [a, b, c, d, e, f, g, h,i] = grades;
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
+const [a, b, c, d, e, f, g, h, i] = grades;
 
 console.log(average(a, b, c, d, e, f, g, h, i));
 
