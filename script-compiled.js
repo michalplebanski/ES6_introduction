@@ -1,7 +1,7 @@
 'use strict';
 
 //ZAD1
-console.log('ZAD1');
+console.log('ZAD1.');
 
 var first = 'Hello ';
 var second = 'world!';

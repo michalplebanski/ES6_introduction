@@ -1,5 +1,5 @@
 //ZAD1
-console.log('ZAD1');
+console.log('ZAD1.');
 
 const first = 'Hello ';
 const second = 'world!';
